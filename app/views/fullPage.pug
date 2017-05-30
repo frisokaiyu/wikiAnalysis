@@ -1,0 +1,85 @@
+//
+   Created by tung on 12/05/17.
+doctype html
+
+html(lang="en")
+head
+    title Simple Form to allow user input a title
+    meta(http-equiv='Content-Type'
+        content='text/html; charset=UTF-8')
+    meta(name='author'
+        content='zen-z0ri')
+    meta(name='keywords'
+        content='fullpage,jquery,single page,wikipedia,data-mining')
+    meta(name='Description'
+        content='A web app can analyze the data from wikipedia')
+    link(href="https://fonts.googleapis.com/css?family=Roboto"
+        rel="stylesheet")
+    //use the fullpage template
+    link(rel='shortcut icon'
+        href='/pic/favicon.ico'
+        type='image/x-icon'
+        media='screen')
+    link(rel='stylesheet'
+        type='text/css'
+        href='/css/jquery.fullpage.css')
+    script(type='text/javascript'
+        src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    script(type='text/javascript'
+        src='/js/jquery.fullpage.js')
+    // google chart
+    script(type="text/javascript"
+        src="https://www.gstatic.com/charts/loader.js")
+body
+    //init loading of the page
+    script(type='text/javascript'
+        src='/js/initpage.js')
+    link(rel='stylesheet'
+        type='text/css'
+        href='/css/selfdefine.css')
+    //the nav menu
+    ul(id='menu')
+        li(data-menuanchor='helloPage' class='active')
+            a(href='#helloPage') Home
+        li(data-menuanchor='mostRev' class='active')
+            a(href='#mostRev') Over All Statistics
+    div(id='fullpage')
+        //individual article search
+        div(class='section' id='section1')
+            h1(id='showIndividual')
+            div(class='sArea')
+                input(id='sText'
+                    type='search'
+                    placeholder='Please enter the title of article')
+                button(id='pullDB' ) Search
+
+                div(id='infoBox')
+            select(id='topUser' multiple)
+            ul(id= 'individual-nav')
+                li
+                    a(id='individual-1')
+                        span 1
+                li
+                    a(id='individual-2')
+                        span 2
+                li
+                    a(id='individual-3')
+                        span 3
+            div(id='individual-fig')
+        //Full set static
+        div(class='section' id='section2')
+            div(class='slide')
+                div(class='fullInfo text')
+                    span(class='revNum')
+                    span(class='registerUser')
+                    span(class='history')
+                ul(id= 'fullset-nav')
+                    li
+                        a(id='fullset-bar')
+                            span Bar
+                    li
+                        a(id='fullset-pie')
+                            span Pie
+                div(id='fullInfo-fig')
+
+
