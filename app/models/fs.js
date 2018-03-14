@@ -1,5 +1,5 @@
 /**
- * Created by tung on 21/05/17.
+ * Created by zhiliang on 21/05/17.
  */
 /*
  * 1. in node.js, the path of require() is always anchor in

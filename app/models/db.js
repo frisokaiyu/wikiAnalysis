@@ -1,5 +1,5 @@
 /**
- * Created by tung on 11/05/17.
+ * Created by zhiliang on 11/05/17.
  * connect to the mongoose
  */
 let mongoose = require("mongoose");
